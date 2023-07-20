@@ -1,0 +1,123 @@
+.card {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bit {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.bit img {
+  margin-left: 2px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.tex {
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 8px 0;
+  color: #777;
+}
+.number {
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  content: "\2022"; /* Unicode for bullet symbol */
+  color: red; /* Set the color to red */
+  position: absolute;
+  left: -20px; /* Adjust the positioning to align the disc where you want it */
+  font-size: 30px; /* Increase the font size to make the disc larger */
+  line-height: 1; /* Ensure proper alignment with the text */
+}
+.bit ul:last-child li::before {
+  color: green;
+}
+.bit ul:last-child li {
+  margin-left: 190px; /* Adjust the value as needed */
+}
+
+.icon {
+  margin-top: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(
+    1.2
+  ); /* Adjust the scale factor to control the hover effect */
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon:hover {
+    transform: scale(
+      1.2
+    ); /* Adjust the scale factor to control the hover effect */
+  }
+}
